@@ -60,11 +60,11 @@ export const CardElementBottom = styled.div`
   height: 300px;
   padding: 1rem;
   border-radius: 10px;
-  background-color: #fce694;
+  background-color: #ffefd3;
   box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   transition: 0.8s;
-  transform: translateY(-240px);
+  transform: translateY(-245px);
 
   &:hover {
     transform: translateY(9px);

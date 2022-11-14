@@ -11,13 +11,13 @@ export default function Favorite() {
   if (favorite === false) {
     return (
       <div onClick={handleFavorite}>
-        <FaRegHeart size={30} />{" "}
+        <FaRegHeart size={30} cursor="pointer" />{" "}
       </div>
     );
   } else {
     return (
       <div onClick={handleFavorite}>
-        <FaHeart size={30} />
+        <FaHeart size={30} cursor="pointer" />
       </div>
     );
   }
