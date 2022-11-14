@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import manmoon from "./manmoon.png";
+
+import {
+  CardContainer,
+  CardTitle,
+  CardImg,
+  CardElementTop,
+  CardElementBottom,
+  CardParagraph,
+} from "./card";
+import StarRating from "./StarRating";
+import Favorite from "./Favorite";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CardContainer>
+      <CardElementTop>
+        <CardImg src={manmoon} alt="album1" />
+      </CardElementTop>
+      <CardElementBottom>
+        <CardTitle>Man on the Moon II: The Legend of Mr. Rager</CardTitle>
+        <CardParagraph>Year: 2010</CardParagraph>
+        <CardParagraph>
+          Give your note: <StarRating />
+        </CardParagraph>
+        <CardParagraph>
+          <Favorite />
+        </CardParagraph>
+      </CardElementBottom>
+    </CardContainer>
   );
 }
 
